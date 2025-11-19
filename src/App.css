@@ -9,6 +9,11 @@
 /* Card style */
 .card-glow{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
 
+/* About / Skills */
+.section-card{padding:1rem;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);border-radius:.75rem}
+.skill-tag{padding:.35rem .65rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02);border-radius:.5rem;font-size:.875rem;color:#e6eef8}
+.skill-tag:hover{background:linear-gradient(90deg,#7c3aed22,#06b6d422);transform:translateY(-2px);transition:all .18s ease}
+
 /* Project image placeholder */
 .project-img{background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:.5rem;height:140px}
 

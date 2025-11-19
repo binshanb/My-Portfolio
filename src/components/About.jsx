@@ -27,43 +27,44 @@ export default function About(){
 
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {groups.map(g => (
-            <div key={g.title}>
-              <h4 className="font-semibold mb-2">{g.title}</h4>
+            <div key={g.title} className="section-card">
+              <h4 className="font-semibold mb-3">{g.title}</h4>
               <ul className="flex flex-wrap gap-2">
-                {g.items.map(i => <Skill key={i} name={i} />)}
+                {g.items.map(i => <li key={i} className="skill-tag">{i}</li>)}
               </ul>
             </div>
           ))}
         </div>
 
         {/* Education */}
-        <div className="mt-8">
-          <h3 className="font-medium">Education</h3>
-          <div className="mt-3">
-            <h4 className="font-semibold">Diploma in Computer Engineering</h4>
-            <p className="text-sm text-gray-300">Government Polytechnic College, Attingal — 2012–2015</p>
-            <p className="text-sm text-gray-400">CGPA: 6.75</p>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="section-card">
+            <h3 className="font-medium mb-2">Education</h3>
+            <div>
+              <h4 className="font-semibold">Diploma in Computer Engineering</h4>
+              <p className="text-sm text-gray-300">Government Polytechnic College, Attingal — 2012–2015</p>
+              <p className="text-sm text-gray-400">CGPA: 6.75</p>
+            </div>
           </div>
-        </div>
 
         {/* Certifications */}
-        <div className="mt-6">
-          <h3 className="font-medium">Certifications</h3>
-          <ul className="mt-2 text-gray-200 list-inside list-disc">
-            <li>Python Full Stack Development — Brototype</li>
-            <li>Certified Agile Scrum Master (CASM) — HRD University</li>
-          </ul>
-        </div>
+          <div className="section-card">
+            <h3 className="font-medium mb-2">Certifications</h3>
+            <ul className="mt-2 text-gray-200 list-inside list-disc">
+              <li>Python Full Stack Development — Brototype</li>
+              <li>Certified Agile Scrum Master (CASM) — HRD University</li>
+            </ul>
+          </div>
 
-        {/* Key Achievements */}
-        <div className="mt-6">
-          <h3 className="font-medium">Key Achievements</h3>
-          <ul className="mt-2 text-gray-200 list-inside list-disc space-y-1">
-            <li>Built and deployed 5+ full-stack web applications hosted on AWS (see Projects for links).</li>
-            <li>Integrated real-time communication using Django Channels and Redis to enable live updates.</li>
-            <li>Improved API performance through optimized queries and caching strategies.</li>
-            <li>Automated deployments with Nginx and Gunicorn and CI/CD pipelines, achieving 99.9% uptime.</li>
-          </ul>
+          <div className="section-card">
+            <h3 className="font-medium mb-2">Key Achievements</h3>
+            <ul className="mt-2 text-gray-200 list-inside list-disc space-y-1">
+              <li>Built and deployed 5+ full-stack web applications hosted on AWS (see Projects for links).</li>
+              <li>Integrated real-time communication using Django Channels and Redis to enable live updates.</li>
+              <li>Improved API performance through optimized queries and caching strategies.</li>
+              <li>Automated deployments with Nginx and Gunicorn and CI/CD pipelines, achieving 99.9% uptime.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
