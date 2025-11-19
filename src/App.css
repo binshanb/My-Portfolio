@@ -1,0 +1,21 @@
+:root{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+
+/* Layout helpers */
+.container-max{max-width:82rem;margin:0 auto;padding:2rem}
+
+/* Subtle glass header */
+.nav-glass{background:rgba(255,255,255,0.03);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04)}
+
+/* Card style */
+.card-glow{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+/* Project image placeholder */
+.project-img{background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:.5rem;height:140px}
+
+/* Accent button */
+.btn-accent{background:linear-gradient(90deg,#7c3aed,#06b6d4);color:white}
+
+/* Smooth reveal */
+.fade-up{transform:translateY(8px);opacity:0;animation:fadeUp .6s ease forwards}
+@keyframes fadeUp{to{transform:none;opacity:1}}
+
